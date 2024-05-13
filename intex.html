@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <link rel="icon" href="favicon.png" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biografia</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    nav {
+      background-color: #ffd477;
+    }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    nav ul li {
+      display: inline;
+    }
+    nav ul li a {
+      display: inline-block;
+      padding: 10px 20px;
+      text-decoration: none;
+      color: #000000;
+    }
+    nav ul li a:hover {
+      background-color: #ffffff;
+    }
+    .banner {
+      background-color: #ffd477;
+      color: #000000;
+      padding: 10px;
+      text-align: center;
+      font-size: 12px;
+      border-bottom: 1px solid #000000;
+    }
+    footer {
+      background-color: #ffd477;
+      color: #000000;
+      padding: 10px 0;
+      text-align: center;
+      margin-top: auto;
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+    }
+    .titolo {
+      text-align: left;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      font-size: 24px;
+      padding: 10px;
+    }
+    .testo {
+      text-align: left;
+      font-family: Arial, sans-serif;
+      font-size: 18px;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="banner">
+      <h1>OPPENHEIMER</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Biografia</a></li>
+        <li><a href="storia.html">Storia</a></li>
+        <li><a href="considerazioni.html">Considerazioni</a></li>
+        <li><a href="fonti.html">Fonti</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="titolo">
+    Biografia
+  </div>
+
+  <br><br>
+  
+  <div class="testo">
+    Julius Robert Oppenheimer (1904-1967), americano, studiò nelle Università di Harvard, Cambridge e Göttingen. Professore di Fisica all’Università della California, nel 1943 venne messo a capo del Progetto Manhattan per la realizzazione della bomba atomica, e diresse il Laboratorio di Los Alamos. Direttore dell’Institute for Advanced Study di Princeton per un ventennio, dal 1947 alla morte, nei primi anni cinquanta fu messo sotto accusa dalla Commissione per le attività antiamericane, ma fu prosciolto poco dopo.
+  </div>
+  <footer>
+    <p>© Francesca Toscano</p>
+  </footer>
+
+  <div style="text-align: center;">
+    <img id="immagine" src="1.png" alt="Immagine" style="width: 250px; height: 250px; border: 2px solid black; border-radius: 10px;" onclick="cambiaImmagine()">
+  </div>
+  <script>
+    function cambiaImmagine() {
+      var immagine = document.getElementById("immagine");
+      if (immagine.src.match("1.png")) {
+        immagine.src = "2.png";
+      } else {
+        immagine.src = "1.png";
+      }
+    }
+  </script>
+</body>
+</html>

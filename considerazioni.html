@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+
+<link rel="icon" href="favicon.png" type="image/png">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Considerazioni</title>
+  <link rel="stylesheet" href="styles.css">
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #ffd477;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #000000;
+}
+
+nav ul li a:hover {
+    background-color: #ffffff;
+}
+
+.banner {
+    background-color: #ffd477;
+    color: #000000;
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+    border-bottom: 1px solid #000000;
+}
+
+footer {
+    background-color: #ffd477;
+    color: #000000;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: auto;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+.titolo {
+      text-align: left;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      font-size: 24px;
+      padding: 10px;
+    }
+    .testo {
+      text-align: left;
+      font-family: Arial, sans-serif;
+      font-size: 18px;
+      padding: 10px;
+    }
+</style>
+
+
+</head>
+
+
+<body>
+
+  <header>
+
+
+    <div class="banner">
+      <h1>OPPENHEIMER</h1>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Biografia</a></li>
+        <li><a href="storia.html">Storia</a></li>
+        <li><a href="considerazioni.html">Considerazioni</a></li>
+        <li><a href="fonti.html">Fonti</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+
+  <div class="titolo">
+    Titolo
+  </div>
+
+  <br><br>
+
+  <div class="testo">
+    L’evento storico venne fortemente influenzato da
+    logiche militari,economiche e politiche che
+    naturalmente andavano ben oltre il controllo della
+    comunità scientifica.
+    Nonostante ciò,così come mostra l’ultima scena
+    del film,la paura dello scienziato Robert
+    Oppenheimer che gli studi sulla fissione avrebbero
+    portato ad una reazione a catena che pian piano
+    avrebbe distrutto il mondo,non è vana…Così
+    come Prometeo che ruba il fuoco a Zeus per donarlo agli uomini venendo
+    sventrato per l'eternità da un'aquila,così gli uomini stessi pagano per
+    l’eternità l’avere utilizzato l’arma a scopo bellico con conseguenze
+    catastrofiche che ricadono sull’uomo stesso.
+    La bomba atomica è una vera e propria rivoluzione,crea una nuova realtà nella quale negli
+    anni a venire le due superpotenze mondiali,ovvero Stati Uniti e Unione Sovietica,hanno la
+    capacità di annichilire la vita terrena.
+    Per sintetizzare questo concetto viene utilizzata l’espressione “equilibrio del terrore”,in
+    riferimento alla corsa agli armamenti atomici per descrivere la pace ottenuta su una tensione
+    basata sul fatto che entrambe le potenze potessero in qualsiasi momento utilizzare l’arma per
+    distruggere il nemico.
+    </div>
+
+    <br><br>
+
+    <div style="text-align: center;">
+      <img id="immagine" src="3.png" alt="Immagine" style="width: 350px; height: 250px; border: 2px solid black; border-radius: 10px;" onclick="cambiaImmagine()">
+    </div>
+    <script>
+      function cambiaImmagine() {
+        var immagine = document.getElementById("immagine");
+        if (immagine.src.match("7.png")) {
+          immagine.src = "8.png";
+        } else {
+          immagine.src = "7.png";
+        }
+      }
+  
+    </script>
+  
+  <br><br><br><br><br><br>
+  
+  <footer>
+    <p>© Francesca Toscano</p>
+  </footer>
+
+
+</body>
+</html>

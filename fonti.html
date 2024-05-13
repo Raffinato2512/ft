@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+
+<link rel="icon" href="favicon.png" type="image/png">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fonti</title>
+  <link rel="stylesheet" href="styles.css">
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #ffd477;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #000000;
+}
+
+nav ul li a:hover {
+    background-color: #ffffff;
+}
+
+.banner {
+    background-color: #ffd477;
+    color: #000000;
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+    border-bottom: 1px solid #000000;
+}
+
+footer {
+    background-color: #ffd477;
+    color: #000000;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: auto;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+.titolo {
+      text-align: left;
+      font-family: Arial, sans-serif;
+      font-weight: bold;
+      font-size: 24px;
+      padding: 10px;
+    }
+    .testo {
+      text-align: left;
+      font-family: Arial, sans-serif;
+      font-size: 18px;
+      padding: 10px;
+    }
+.slideshow-container {
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid #000;
+  margin: auto;
+}
+
+.slideshow-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+  <header>
+
+    <div class="banner">
+      <h1>OPPENHEIMER</h1>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Biografia</a></li>
+        <li><a href="storia.html">Storia</a></li>
+        <li><a href="considerazioni.html">Considerazioni</a></li>
+        <li><a href="fonti.html">Fonti</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <div class="titolo">
+    Fonti
+  </div>
+<br><br>
+
+  <div class="testo">
+    - Wikipedia;
+  </div>
+
+  <div class="slideshow-container">
+    <img src="9.png" alt="Slide 1">
+    <img src="10.png" alt="Slide 2">
+    <img src="11.png" alt="Slide 3">
+  </div>
+
+  <footer>
+    <p>© Francesca Toscano</p>
+  </footer>
+
+<script>
+let currentSlide = 0;
+const slides = document.querySelectorAll('.slideshow-container img');
+const maxSlides = slides.length;
+
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    if (i === index) {
+      slide.style.display = 'block';
+    } else {
+      slide.style.display = 'none';
+    }
+  });
+}
+
+function nextSlide() {
+  currentSlide = (currentSlide + 1) % maxSlides;
+  showSlide(currentSlide);
+}
+
+function prevSlide() {
+  currentSlide = (currentSlide - 1 + maxSlides) % maxSlides;
+  showSlide(currentSlide);
+}
+
+showSlide(currentSlide);
+setInterval(nextSlide, 3000); // Cambia slide ogni 3 secondi
+</script>
+
+</body>
+</html>
